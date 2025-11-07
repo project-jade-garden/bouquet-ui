@@ -69,5 +69,5 @@ export const designCleanPkg = async (): Promise<string> => {
     cleanPkg.exports[`./themes/${file}`] = `./dist/styles/themes/${theme}`;
   }
 
-  return JSON.stringify(cleanPkg, null, 2);
+  return JSON.stringify({ replace: cleanPkg }, null, 2);
 };

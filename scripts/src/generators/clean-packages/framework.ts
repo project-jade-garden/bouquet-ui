@@ -93,5 +93,5 @@ export const frameworkCleanPkg = async (packageDir: string): Promise<string> => 
     };
   }
 
-  return JSON.stringify(cleanPkg, null, 2);
+  return JSON.stringify({ replace: cleanPkg }, null, 2);
 };
