@@ -1,0 +1,21 @@
+{
+  "name": "@bouquet-ui/scripts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "biome format --write .",
+    "gen:clean-packages": "bun run ./src/clean-packages.ts",
+    "gen:traits": "bun run ./src/traits.ts",
+    "lint": "biome lint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@zag-js/docs": "1.27.0",
+    "es-toolkit": "1.41.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "typescript": "catalog:"
+  }
+}

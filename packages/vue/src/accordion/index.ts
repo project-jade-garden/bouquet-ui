@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////////
+
+export type {
+  UseAccordionProps,
+  UseAccordionReturn
+} from "@ark-ui/vue/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export {
+  useAccordion,
+  useAccordionContext,
+  useAccordionItemContext
+} from "@ark-ui/vue/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export type {
+//   AccordionFocusChangeDetails,
+//   AccordionItemContentProps,
+//   AccordionItemIndicatorProps,
+//   AccordionItemProps,
+//   AccordionItemTriggerProps,
+//   AccordionRootEmits,
+//   AccordionRootProps,
+//   AccordionRootProviderProps,
+//   AccordionValueChangeDetails
+// } from "@ark-ui/vue/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export {
+//   AccordionContext,
+//   AccordionItem,
+//   AccordionItemContent,
+//   AccordionItemContext,
+//   AccordionItemIndicator,
+//   AccordionItemTrigger,
+//   AccordionRoot,
+//   AccordionRootProvider
+// } from "@ark-ui/vue/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export * as Accordion from "./exports";
+
+////////////////////////////////////////////////////////////////////////////////////

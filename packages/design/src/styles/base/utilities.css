@@ -1,0 +1,25 @@
+/** Utilities based on Chakra UI: https://www.chakra-ui.com/docs/components/concepts/overview */
+
+@utility center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@utility h-stack-* {
+  display: flex;
+  flex-direction: row;
+  gap: --spacing(--value(integer, number));
+}
+@utility simple-grid-* {
+  display: grid;
+  grid-template-columns: repeat(--value(integer), minmax(0px, 1fr));
+}
+@utility v-stack-* {
+  display: flex;
+  flex-direction: column;
+  gap: --spacing(--value(integer, number));
+}
+@utility wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

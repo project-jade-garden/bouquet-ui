@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////////
+
+export type {
+  UseRatingGroupProps,
+  UseRatingGroupReturn
+} from "@ark-ui/vue/rating-group";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export {
+  useRatingGroup,
+  useRatingGroupContext,
+  useRatingGroupItemContext
+} from "@ark-ui/vue/rating-group";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export type {
+//   RatingGroupControlProps,
+//   RatingGroupHiddenInputProps,
+//   RatingGroupHoverChangeDetails,
+//   RatingGroupItemProps,
+//   RatingGroupLabelProps,
+//   RatingGroupRootEmits,
+//   RatingGroupRootProps,
+//   RatingGroupRootProviderProps,
+//   RatingGroupValueChangeDetails
+// } from "@ark-ui/vue/rating-group";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export {
+//   RatingGroupContext,
+//   RatingGroupControl,
+//   RatingGroupHiddenInput,
+//   RatingGroupItem,
+//   RatingGroupItemContext,
+//   RatingGroupLabel,
+//   RatingGroupRoot,
+//   RatingGroupRootProvider
+// } from "@ark-ui/vue/rating-group";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export * as RatingGroup from "./exports";
+
+////////////////////////////////////////////////////////////////////////////////////

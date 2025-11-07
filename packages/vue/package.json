@@ -1,0 +1,81 @@
+{
+  "name": "@bouquet-ui/vue",
+  "version": "0.0.0",
+  "description": "A lovely arrangement of Vue components built with Ark UI, Jade Garden, and Tailwind CSS",
+  "keywords": [
+    "bouquet-ui",
+    "ark-ui",
+    "vue",
+    "ui",
+    "design-system",
+    "themes",
+    "vue-components",
+    "uikit",
+    "accessible",
+    "components",
+    "tailwindcss",
+    "tailwind",
+    "jade-garden"
+  ],
+  "author": "Gregory Salinas <ags1130@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-jade-garden/bouquet-ui.git",
+    "directory": "packages/vue"
+  },
+  "bugs": {
+    "url": "https://github.com/project-jade-garden/bouquet-ui/issues"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "build": "bun typecheck && vite build",
+    "clean": "rm -rf .turbo dist node_modules",
+    "dev": "bun run storybook",
+    "format": "biome format --write .",
+    "lint": "biome lint",
+    "postpub": "clean-package restore",
+    "prepub": "clean-package",
+    "storybook": "storybook dev -p 6004",
+    "typecheck": "vue-tsc"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@ark-ui/vue": "catalog:ark"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@bouquet-ui/design": "workspace:",
+    "@rollup/plugin-node-resolve": "16.0.3",
+    "@storybook/addon-a11y": "catalog:sb",
+    "@storybook/addon-themes": "catalog:sb",
+    "@storybook/vue3-vite": "catalog:sb",
+    "@tailwindcss/vite": "catalog:tw",
+    "@vitejs/plugin-vue": "6.0.1",
+    "clean-package": "catalog:",
+    "globby": "catalog:",
+    "jade-garden": "catalog:jg",
+    "lucide-vue-next": "0.552.0",
+    "storybook": "catalog:sb",
+    "tailwindcss": "catalog:tw",
+    "typescript": "catalog:",
+    "vite": "catalog:vite",
+    "vite-plugin-dts": "catalog:vite",
+    "vite-tsconfig-paths": "catalog:vite",
+    "vue": "3.5.22",
+    "vue-tsc": "3.1.2"
+  },
+  "peerDependencies": {
+    "vue": ">=3.5.0"
+  }
+}

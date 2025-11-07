@@ -1,0 +1,83 @@
+{
+  "name": "@bouquet-ui/svelte",
+  "version": "0.0.0",
+  "description": "A lovely arrangement of Svelte components built with Ark UI, Jade Garden, and Tailwind CSS",
+  "keywords": [
+    "bouquet-ui",
+    "ark-ui",
+    "svelte",
+    "ui",
+    "design-system",
+    "themes",
+    "svelte-components",
+    "uikit",
+    "accessible",
+    "components",
+    "tailwindcss",
+    "tailwind",
+    "jade-garden"
+  ],
+  "author": "Gregory Salinas <ags1130@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-jade-garden/bouquet-ui.git",
+    "directory": "packages/svelte"
+  },
+  "bugs": {
+    "url": "https://github.com/project-jade-garden/bouquet-ui/issues"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "build": "bun typecheck && svelte-package --tsconfig ./tsconfig.build.json",
+    "clean": "rm -rf .turbo dist node_modules",
+    "dev": "bun run storybook",
+    "format": "biome format --write .",
+    "lint": "biome lint",
+    "postpub": "clean-package restore",
+    "prepub": "clean-package",
+    "storybook": "storybook dev -p 6003",
+    "typecheck": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@ark-ui/svelte": "catalog:ark"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@bouquet-ui/design": "workspace:",
+    "@storybook/addon-a11y": "catalog:sb",
+    "@storybook/addon-themes": "catalog:sb",
+    "@storybook/sveltekit": "catalog:sb",
+    "@sveltejs/adapter-auto": "7.0.0",
+    "@sveltejs/kit": "2.48.4",
+    "@sveltejs/package": "2.5.4",
+    "@sveltejs/vite-plugin-svelte": "6.2.1",
+    "@tailwindcss/vite": "catalog:tw",
+    "@tanstack/svelte-form": "1.23.8",
+    "clean-package": "catalog:",
+    "globby": "catalog:",
+    "jade-garden": "catalog:jg",
+    "lucide-svelte": "0.552.0",
+    "storybook": "catalog:sb",
+    "svelte": "5.43.2",
+    "svelte-check": "4.3.3",
+    "tailwindcss": "catalog:tw",
+    "typescript": "catalog:",
+    "vite": "catalog:vite",
+    "vite-tsconfig-paths": "catalog:vite"
+  },
+  "peerDependencies": {
+    "svelte": ">=5.20.0"
+  }
+}

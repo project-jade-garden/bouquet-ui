@@ -1,0 +1,537 @@
+/** Conditions based on Panda CSS: https://github.com/chakra-ui/panda/blob/main/packages/preset-base/src/conditions.ts */
+
+@custom-variant hover {
+  &:is(:hover, [data-hover]) {
+    @slot;
+  }
+}
+@custom-variant focus {
+  &:is(:focus, [data-focus]) {
+    @slot;
+  }
+}
+@custom-variant focus-within {
+  &:focus-within {
+    @slot;
+  }
+}
+@custom-variant focus-visible {
+  &:is(:focus-visible, [data-focus-visible]) {
+    @slot;
+  }
+}
+@custom-variant disabled {
+  &:is(:disabled, [disabled], [data-disabled], [aria-disabled=true]) {
+    @slot;
+  }
+}
+@custom-variant active {
+  &:is(:active, [data-active]) {
+    @slot;
+  }
+}
+@custom-variant visited {
+  &:visited {
+    @slot;
+  }
+}
+@custom-variant target {
+  &:target {
+    @slot;
+  }
+}
+@custom-variant read-only {
+  &:is(:read-only, [data-read-only], [aria-readonly=true]) {
+    @slot;
+  }
+}
+@custom-variant read-write {
+  &:read-write {
+    @slot;
+  }
+}
+@custom-variant empty {
+  &:is(:empty, [data-empty]) {
+    @slot;
+  }
+}
+@custom-variant checked {
+  &:is(:checked, [data-checked], [aria-checked=true], [data-state="checked"]) {
+    @slot;
+  }
+}
+@custom-variant enabled {
+  &:enabled {
+    @slot;
+  }
+}
+@custom-variant expanded {
+  &:is([aria-expanded=true], [data-expanded], [data-state="expanded"]) {
+    @slot;
+  }
+}
+@custom-variant highlighted {
+  &[data-highlighted] {
+    @slot;
+  }
+}
+@custom-variant complete {
+  &[data-complete] {
+    @slot;
+  }
+}
+@custom-variant incomplete {
+  &[data-incomplete] {
+    @slot;
+  }
+}
+@custom-variant dragging {
+  &[data-dragging] {
+    @slot;
+  }
+}
+@custom-variant before {
+  &::before {
+    @slot;
+  }
+}
+@custom-variant after {
+  &::after {
+    @slot;
+  }
+}
+@custom-variant first-letter {
+  &::first-letter {
+    @slot;
+  }
+}
+@custom-variant first-line {
+  &::first-line {
+    @slot;
+  }
+}
+@custom-variant marker {
+  &::marker, &::-webkit-details-marker {
+    @slot;
+  }
+}
+@custom-variant selection {
+  &::selection {
+    @slot;
+  }
+}
+@custom-variant file {
+  &::file-selector-button {
+    @slot;
+  }
+}
+@custom-variant backdrop {
+  &::backdrop {
+    @slot;
+  }
+}
+@custom-variant first {
+  &:first-child {
+    @slot;
+  }
+}
+@custom-variant last {
+  &:last-child {
+    @slot;
+  }
+}
+@custom-variant only {
+  &:only-child {
+    @slot;
+  }
+}
+@custom-variant even {
+  &:nth-child(even) {
+    @slot;
+  }
+}
+@custom-variant odd {
+  &:nth-child(odd) {
+    @slot;
+  }
+}
+@custom-variant first-of-type {
+  &:first-of-type {
+    @slot;
+  }
+}
+@custom-variant last-of-type {
+  &:last-of-type {
+    @slot;
+  }
+}
+@custom-variant only-of-type {
+  &:only-of-type {
+    @slot;
+  }
+}
+@custom-variant peer-focus {
+  .peer:is(:focus, [data-focus]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-hover {
+  .peer:is(:hover, [data-hover]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-active {
+  .peer:is(:active, [data-active]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-focus-within {
+  .peer:focus-within ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-focus-visible {
+  .peer:is(:focus-visible, [data-focus-visible]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-disabled {
+  .peer:is(:disabled, [disabled], [data-disabled], [aria-disabled=true]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-checked {
+  .peer:is(:checked, [data-checked], [aria-checked=true], [data-state="checked"]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-invalid {
+  .peer:is(:invalid, [data-invalid], [aria-invalid=true]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-expanded {
+  .peer:is([aria-expanded=true], [data-expanded], [data-state="expanded"]) ~ & {
+    @slot;
+  }
+}
+@custom-variant peer-placeholder-shown {
+  .peer:placeholder-shown ~ & {
+    @slot;
+  }
+}
+@custom-variant group-focus {
+  .group:is(:focus, [data-focus]) & {
+    @slot;
+  }
+}
+@custom-variant group-hover {
+  .group:is(:hover, [data-hover]) & {
+    @slot;
+  }
+}
+@custom-variant group-active {
+  .group:is(:active, [data-active]) & {
+    @slot;
+  }
+}
+@custom-variant group-focus-within {
+  .group:focus-within & {
+    @slot;
+  }
+}
+@custom-variant group-focus-visible {
+  .group:is(:focus-visible, [data-focus-visible]) & {
+    @slot;
+  }
+}
+@custom-variant group-disabled {
+  .group:is(:disabled, [disabled], [data-disabled], [aria-disabled=true]) & {
+    @slot;
+  }
+}
+@custom-variant group-checked {
+  .group:is(:checked, [data-checked], [aria-checked=true], [data-state="checked"]) & {
+    @slot;
+  }
+}
+@custom-variant group-expanded {
+  .group:is([aria-expanded=true], [data-expanded], [data-state="expanded"]) & {
+    @slot;
+  }
+}
+@custom-variant group-invalid {
+  .group:is(:invalid, [data-invalid], [aria-invalid=true]) & {
+    @slot;
+  }
+}
+@custom-variant indeterminate {
+  &:is(:indeterminate, [data-indeterminate], [aria-checked=mixed], [data-state="indeterminate"]) {
+    @slot;
+  }
+}
+@custom-variant required {
+  &:is(:required, [data-required], [aria-required=true]) {
+    @slot;
+  }
+}
+@custom-variant valid {
+  &:is(:valid, [data-valid]) {
+    @slot;
+  }
+}
+@custom-variant invalid {
+  &:is(:invalid, [data-invalid], [aria-invalid=true]) {
+    @slot;
+  }
+}
+@custom-variant autofill {
+  &:autofill {
+    @slot;
+  }
+}
+@custom-variant in-range {
+  &:is(:in-range, [data-in-range]) {
+    @slot;
+  }
+}
+@custom-variant out-of-range {
+  &:is(:out-of-range, [data-outside-range]) {
+    @slot;
+  }
+}
+@custom-variant placeholder {
+  &::placeholder, &[data-placeholder] {
+    @slot;
+  }
+}
+@custom-variant placeholder-shown {
+  &:is(:placeholder-shown, [data-placeholder-shown]) {
+    @slot;
+  }
+}
+@custom-variant pressed {
+  &:is([aria-pressed=true], [data-pressed]) {
+    @slot;
+  }
+}
+@custom-variant selected {
+  &:is([aria-selected=true], [data-selected]) {
+    @slot;
+  }
+}
+@custom-variant grabbed {
+  &:is([aria-grabbed=true], [data-grabbed]) {
+    @slot;
+  }
+}
+@custom-variant under-value {
+  &[data-state=under-value] {
+    @slot;
+  }
+}
+@custom-variant over-value {
+  &[data-state=over-value] {
+    @slot;
+  }
+}
+@custom-variant at-value {
+  &[data-state=at-value] {
+    @slot;
+  }
+}
+@custom-variant default {
+  &:default {
+    @slot;
+  }
+}
+@custom-variant optional {
+  &:optional {
+    @slot;
+  }
+}
+@custom-variant open {
+  &:is([open], [data-open], [data-state="open"], :popover-open) {
+    @slot;
+  }
+}
+@custom-variant closed {
+  &:is([closed], [data-closed], [data-state="closed"]) {
+    @slot;
+  }
+}
+@custom-variant fullscreen {
+  &:is(:fullscreen, [data-fullscreen]) {
+    @slot;
+  }
+}
+@custom-variant loading {
+  &:is([data-loading], [aria-busy=true]) {
+    @slot;
+  }
+}
+@custom-variant hidden {
+  &:is([hidden], [data-hidden]) {
+    @slot;
+  }
+}
+@custom-variant current {
+  &:is([aria-current=true], [data-current]) {
+    @slot;
+  }
+}
+@custom-variant current-page {
+  &[aria-current=page] {
+    @slot;
+  }
+}
+@custom-variant current-step {
+  &[aria-current=step] {
+    @slot;
+  }
+}
+@custom-variant today {
+  &[data-today] {
+    @slot;
+  }
+}
+@custom-variant unavailable {
+  &[data-unavailable] {
+    @slot;
+  }
+}
+@custom-variant range-start {
+  &[data-range-start] {
+    @slot;
+  }
+}
+@custom-variant range-end {
+  &[data-range-end] {
+    @slot;
+  }
+}
+@custom-variant now {
+  &[data-now] {
+    @slot;
+  }
+}
+@custom-variant topmost {
+  &[data-topmost] {
+    @slot;
+  }
+}
+@custom-variant motion-reduce {
+  @media (prefers-reduced-motion: reduce) {
+    @slot;
+  }
+}
+@custom-variant motion-safe {
+  @media (prefers-reduced-motion: no-preference) {
+    @slot;
+  }
+}
+@custom-variant print {
+  @media print {
+    @slot;
+  }
+}
+@custom-variant landscape {
+  @media (orientation: landscape) {
+    @slot;
+  }
+}
+@custom-variant portrait {
+  @media (orientation: portrait) {
+    @slot;
+  }
+}
+@custom-variant dark {
+  .dark & {
+    @slot;
+  }
+}
+@custom-variant light {
+  .light & {
+    @slot;
+  }
+}
+@custom-variant os-dark {
+  @media (prefers-color-scheme: dark) {
+    @slot;
+  }
+}
+@custom-variant os-light {
+  @media (prefers-color-scheme: light) {
+    @slot;
+  }
+}
+@custom-variant high-contrast {
+  @media (forced-colors: active) {
+    @slot;
+  }
+}
+@custom-variant less-contrast {
+  @media (prefers-contrast: less) {
+    @slot;
+  }
+}
+@custom-variant more-contrast {
+  @media (prefers-contrast: more) {
+    @slot;
+  }
+}
+@custom-variant ltr {
+  :where([dir=ltr], :dir(ltr)) & {
+    @slot;
+  }
+}
+@custom-variant rtl {
+  :where([dir=rtl], :dir(rtl)) & {
+    @slot;
+  }
+}
+@custom-variant scrollbar {
+  &::-webkit-scrollbar {
+    @slot;
+  }
+}
+@custom-variant scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
+    @slot;
+  }
+}
+@custom-variant scrollbar-track {
+  &::-webkit-scrollbar-track {
+    @slot;
+  }
+}
+@custom-variant horizontal {
+  &[data-orientation=horizontal] {
+    @slot;
+  }
+}
+@custom-variant vertical {
+  &[data-orientation=vertical] {
+    @slot;
+  }
+}
+@custom-variant icon {
+  & :where(svg) {
+    @slot;
+  }
+}
+@custom-variant starting {
+  @starting-style {
+    @slot;
+  }
+}
+@custom-variant noscript {
+  @media (scripting: none) {
+    @slot;
+  }
+}
+@custom-variant inverted-colors {
+  @media (inverted-colors: inverted) {
+    @slot;
+  }
+}

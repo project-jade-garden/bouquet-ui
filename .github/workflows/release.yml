@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    paths:
+      - ".changeset/**"
+      - "packages/**"
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Build packages
+        run: bun run build
+
+      - name: Publish packages
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: bun run version
+          commit: "ci(changesets): version packages"
+          setupGitUser: false
+          publish: bun run release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,81 @@
+{
+  "name": "@bouquet-ui/design",
+  "version": "0.0.0",
+  "description": "The headless design system for Bouquet UI built with Jade Garden and Tailwind CSS",
+  "keywords": [
+    "bouquet-ui",
+    "ark-ui",
+    "tailwindcss",
+    "tailwind",
+    "jade-garden",
+    "react",
+    "solid",
+    "svelte",
+    "vue",
+    "css",
+    "ui",
+    "component",
+    "framework",
+    "design-system",
+    "themes"
+  ],
+  "author": "Gregory Salinas <ags1130@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-jade-garden/bouquet-ui.git",
+    "directory": "packages/design"
+  },
+  "bugs": {
+    "url": "https://github.com/project-jade-garden/bouquet-ui/issues"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./animations": "./src/classes/animations/index.ts",
+    "./components": "./src/classes/components/index.ts",
+    "./elements": "./src/classes/elements/index.ts",
+    "./styles": "./src/styles/index.css",
+    "./themes/strawflower": "./src/styles/themes/strawflower.css",
+    "./themes/begonia": "./src/styles/themes/begonia.css",
+    "./themes/sunflower": "./src/styles/themes/sunflower.css",
+    "./themes/dahlia": "./src/styles/themes/dahlia.css",
+    "./themes/fuschia": "./src/styles/themes/fuschia.css",
+    "./themes/sakura": "./src/styles/themes/sakura.css",
+    "./themes/magnolia": "./src/styles/themes/magnolia.css",
+    "./themes/marigold": "./src/styles/themes/marigold.css",
+    "./themes/bluebell": "./src/styles/themes/bluebell.css",
+    "./themes/lotus": "./src/styles/themes/lotus.css"
+  },
+  "scripts": {
+    "build": "bun typecheck && vite build",
+    "clean": "rm -rf .turbo dist node_modules",
+    "dev": "vite build --watch",
+    "format": "biome format --write .",
+    "lint": "biome lint",
+    "postpub": "clean-package restore",
+    "prepub": "clean-package",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "jade-garden": "catalog:jg"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "clean-package": "catalog:",
+    "globby": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:vite",
+    "vite-plugin-dts": "catalog:vite"
+  },
+  "peerDependencies": {
+    "jade-garden": ">=2.0.5"
+  }
+}

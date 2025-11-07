@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@source "../node_modules/@bouquet-ui/design";
+
+@import "@bouquet-ui/design/styles";
+/* @import "@bouquet-ui/design/themes/lotus"; */

@@ -1,0 +1,18 @@
+diff --git a/src/NumberFormatter.ts b/src/NumberFormatter.ts
+index f0968629aaba69de840b891ff5ee4fb1ca6efb1a..710c6ccf9bf70e8f7351e5db5725c5d415189381 100644
+--- a/src/NumberFormatter.ts
++++ b/src/NumberFormatter.ts
+@@ -1,3 +1,4 @@
++// @ts-nocheck
+ /*
+  * Copyright 2020 Adobe. All rights reserved.
+  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+diff --git a/src/NumberParser.ts b/src/NumberParser.ts
+index ae6448f027d6d6e6c010cf74659b9800434d0d5b..46d40a2ceb3d8519a3993ac01d54dca88aa624c0 100644
+--- a/src/NumberParser.ts
++++ b/src/NumberParser.ts
+@@ -1,3 +1,4 @@
++// @ts-nocheck
+ /*
+  * Copyright 2020 Adobe. All rights reserved.
+  * This file is licensed to you under the Apache License, Version 2.0 (the "License");

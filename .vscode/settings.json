@@ -1,0 +1,37 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "always"
+  },
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.data": true,
+    "**/.nuxt": true,
+    "**/.turbo": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/tsconfig.tsbuildinfo": true
+  },
+  "material-icon-theme.folders.associations": {
+    "react": "React-components",
+    "solid": "Core"
+  },
+  "mdc.enableComponentMetadataCompletions": true,
+  // https://github.com/nuxtlabs/vscode-mdc?tab=readme-ov-file#formatting
+  "mdc.enableFormatting": true,
+  "[mdc]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnPaste": true
+  },
+  "tailwindCSS.classFunctions": ["cm", "cn", "cva", "cx", "prefixes", "sva", "traits"],
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "svg.preview.background": "editor"
+}

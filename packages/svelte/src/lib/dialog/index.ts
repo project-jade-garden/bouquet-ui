@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////////////////////////////////
+
+export type {
+  UseDialogProps,
+  UseDialogReturn
+} from "@ark-ui/svelte/dialog";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export {
+  useDialog,
+  useDialogContext
+} from "@ark-ui/svelte/dialog";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export type {
+//   DialogBackdropProps,
+//   DialogCloseTriggerProps,
+//   DialogContentProps,
+//   DialogDescriptionProps,
+//   DialogOpenChangeDetails,
+//   DialogPositionerProps,
+//   DialogRootProps,
+//   DialogRootProviderProps,
+//   DialogTitleProps,
+//   DialogTriggerProps
+// } from "@ark-ui/svelte/dialog";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export {
+//   DialogBackdrop,
+//   DialogCloseTrigger,
+//   DialogContent,
+//   DialogContext,
+//   DialogDescription,
+//   Positioner as DialogPositioner,
+//   Root as DialogRoot,
+//   RootProvider as DialogRootProvider,
+//   Title as DialogTitle,
+//   Trigger as DialogTrigger
+// } from "@ark-ui/svelte/dialog";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export * as Dialog from "./exports";
+
+////////////////////////////////////////////////////////////////////////////////////

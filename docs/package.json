@@ -1,0 +1,21 @@
+{
+  "name": "@bouquet-ui/docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build -e docus",
+    "clean": "rm -rf .nuxt .turbo dist node_modules",
+    "dev": "nuxt dev -e docus"
+  },
+  "dependencies": {
+    "@nuxt/ui-pro": "3.3.7",
+    "@nuxtjs/plausible": "2.0.1",
+    "better-sqlite3": "12.4.1",
+    "docus": "5.2.1",
+    "nuxt": "4.2.0",
+    "tailwindcss": "catalog:tw"
+  },
+  "trustedDependencies": [
+    "better-sqlite3"
+  ]
+}

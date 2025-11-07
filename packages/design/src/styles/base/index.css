@@ -1,0 +1,23 @@
+@import "./theme.css";
+@import "./conditions.css";
+@import "./utilities.css";
+@import "./keyframes.css";
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-color-default);
+    background-color: var(--background-color-default);
+    color-scheme: light;
+
+    @variant dark {
+      color-scheme: dark;
+    }
+  }
+
+  :root {
+    --bouquet-ui: "💐";
+    --made-with-jade-garden: "🌿";
+  }
+}

@@ -1,0 +1,46 @@
+////////////////////////////////////////////////////////////////////////////////////
+
+export type {
+  UseAccordionProps,
+  UseAccordionReturn
+} from "@ark-ui/svelte/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export {
+  useAccordion,
+  useAccordionContext,
+  useAccordionItemContext
+} from "@ark-ui/svelte/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export type {
+//   AccordionFocusChangeDetails,
+//   AccordionItemContentProps,
+//   AccordionItemIndicatorProps,
+//   AccordionItemProps,
+//   AccordionItemTriggerProps,
+//   AccordionRootProps,
+//   AccordionRootProviderProps,
+//   AccordionValueChangeDetails
+// } from "@ark-ui/svelte/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export {
+//   AccordionContext,
+//   AccordionItem,
+//   AccordionItemContent,
+//   AccordionItemContext,
+//   AccordionItemIndicator,
+//   AccordionItemTrigger,
+//   AccordionRoot,
+//   AccordionRootProvider
+// } from "@ark-ui/svelte/accordion";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export * as Accordion from "./exports";
+
+////////////////////////////////////////////////////////////////////////////////////

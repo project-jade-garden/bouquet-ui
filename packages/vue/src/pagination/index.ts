@@ -1,0 +1,46 @@
+////////////////////////////////////////////////////////////////////////////////////
+
+export type {
+  UsePaginationProps,
+  UsePaginationReturn
+} from "@ark-ui/vue/pagination";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export {
+  usePagination,
+  usePaginationContext
+} from "@ark-ui/vue/pagination";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export type {
+//   PaginationEllipsisProps,
+//   PaginationItemLabelDetails,
+//   PaginationItemProps,
+//   PaginationNextTriggerProps,
+//   PaginationPageChangeDetails,
+//   PaginationPageSizeChangeDetails,
+//   PaginationPrevTriggerProps,
+//   PaginationRootEmits,
+//   PaginationRootProps,
+//   PaginationRootProviderProps
+// } from "@ark-ui/vue/pagination";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export {
+//   PaginationContext,
+//   PaginationEllipsis,
+//   PaginationItem,
+//   PaginationNextTrigger,
+//   PaginationPrevTrigger,
+//   PaginationRoot,
+//   PaginationRootProvider
+// } from "@ark-ui/vue/pagination";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export * as Pagination from "./exports";
+
+////////////////////////////////////////////////////////////////////////////////////

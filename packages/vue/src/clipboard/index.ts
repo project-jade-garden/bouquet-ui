@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////////
+
+export type {
+  UseClipboardProps,
+  UseClipboardReturn
+} from "@ark-ui/vue/clipboard";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export {
+  useClipboard,
+  useClipboardContext
+} from "@ark-ui/vue/clipboard";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export type {
+//   ClipboardControlProps,
+//   ClipboardCopyStatusDetails,
+//   ClipboardIndicatorProps,
+//   ClipboardInputProps,
+//   ClipboardLabelProps,
+//   ClipboardRootEmits,
+//   ClipboardRootProps,
+//   ClipboardRootProviderProps,
+//   ClipboardTriggerProps,
+//   ClipboardValueTextProps
+// } from "@ark-ui/vue/clipboard";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// export {
+//   ClipboardContext,
+//   ClipboardControl,
+//   ClipboardIndicator,
+//   ClipboardInput,
+//   ClipboardLabel,
+//   ClipboardRoot,
+//   ClipboardRootProvider,
+//   ClipboardTrigger,
+//   ClipboardValueText
+// } from "@ark-ui/vue/clipboard";
+
+////////////////////////////////////////////////////////////////////////////////////
+
+export * as Clipboard from "./exports";
+
+////////////////////////////////////////////////////////////////////////////////////

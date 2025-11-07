@@ -1,0 +1,83 @@
+{
+  "name": "@bouquet-ui/solid",
+  "version": "0.0.0",
+  "description": "A lovely arrangement of Solid components built with Ark UI, Jade Garden, and Tailwind CSS",
+  "keywords": [
+    "bouquet-ui",
+    "ark-ui",
+    "solid",
+    "ui",
+    "design-system",
+    "themes",
+    "solid-components",
+    "uikit",
+    "accessible",
+    "components",
+    "tailwindcss",
+    "tailwind",
+    "jade-garden"
+  ],
+  "author": "Gregory Salinas <ags1130@yahoo.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/project-jade-garden/bouquet-ui.git",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/project-jade-garden/bouquet-ui/issues"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": "./src/*.ts"
+  },
+  "scripts": {
+    "build": "bun typecheck && vite build",
+    "clean": "rm -rf .turbo dist node_modules",
+    "dev": "bun run storybook",
+    "format": "biome format --write .",
+    "lint": "biome lint",
+    "postpub": "clean-package restore",
+    "prepub": "clean-package",
+    "storybook": "storybook dev -p 6002",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@ark-ui/solid": "catalog:ark"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@bouquet-ui/design": "workspace:",
+    "@modular-forms/solid": "0.25.1",
+    "@storybook/addon-a11y": "catalog:sb",
+    "@storybook/addon-themes": "catalog:sb",
+    "@tailwindcss/vite": "catalog:tw",
+    "clean-package": "catalog:",
+    "globby": "catalog:",
+    "jade-garden": "catalog:jg",
+    "lucide-solid": "0.552.0",
+    "solid-js": "1.9.10",
+    "storybook": "catalog:sb",
+    "storybook-solidjs-vite": "10.0.5",
+    "tailwindcss": "catalog:tw",
+    "typescript": "catalog:",
+    "vite": "catalog:vite",
+    "vite-plugin-dts": "catalog:vite",
+    "vite-plugin-solid": "2.11.10",
+    "vite-tsconfig-paths": "catalog:vite"
+  },
+  "overrides": {
+    "solid-js": "1.9.10"
+  },
+  "peerDependencies": {
+    "solid-js": ">=1.6.0"
+  }
+}

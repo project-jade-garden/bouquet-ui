@@ -1,0 +1,18 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "outputs": [".output/**", "dist/**"],
+      "dependsOn": ["^build"]
+    },
+    "dev": {
+      "outputs": ["dist/**"]
+    },
+    "clean": {},
+    "format": {},
+    "lint": {},
+    "prepub": {},
+    "postpub": {},
+    "typecheck": {}
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": ["**", "!**/dist", "!**/node_modules", "!**/*.css"]
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "includes": ["**", "!**/dist", "!**/node_modules", "!**/.svelte-kit", "!**/*.svelte", "!**/*.vue"],
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space",
+      "quoteStyle": "double",
+      "semicolons": "always",
+      "trailingCommas": "none"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "includes": ["**", "!**/dist", "!**/node_modules", "!**/.svelte-kit", "!**/*.svelte", "!**/*.vue"],
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noArrayIndexKey": "off",
+        "noExplicitAny": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off"
+      },
+      "performance": {
+        "noAccumulatingSpread": "off"
+      },
+      "a11y": {
+        "useButtonType": "off",
+        "noLabelWithoutControl": "off",
+        "useSemanticElements": "off"
+      },
+      "style": {
+        "useConst": "off"
+      },
+      "correctness": {
+        "useUniqueElementIds": "off"
+      }
+    }
+  }
+}

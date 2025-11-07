@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsxImportSource": "vue",
+    "lib": ["ESNext", "DOM"],
+
+    // * Overrides to '@internationalized/date'
+    "exactOptionalPropertyTypes": false,
+    "noImplicitAny": false,
+    "verbatimModuleSyntax": false
+  },
+  "exclude": ["dist", "node_modules"],
+  "include": [".storybook", ".storybook/stories", "src", "./vite.config.ts"]
+}
