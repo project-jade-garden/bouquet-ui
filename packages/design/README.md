@@ -1,57 +1,67 @@
-# Skeleton
+# @bouquet-ui/design
 
-This repository contains all the stylesheets for the Skeleton package.
+`@bouquet-ui/design` is an open-source UI library built with [Jade Garden](https://jade-garden.org/), and [Tailwind CSS](https://tailwindcss.com/).
+It is designed for building reusable, scalable Design Systems with [Ark UI](https://ark-ui.com/).
 
-## Installation
+## Quick Start
+
+### Installation
+
+Install `@bouquet-ui/design` using your preferred package manager:
 
 ```bash
-pnpm add @skeletonlabs/skeleton
+# Using npm
+npm install @bouquet-ui/design jade-garden tailwindcss @tailwindcss/vite
+
+# Using yarn
+yarn add @bouquet-ui/design jade-garden tailwindcss @tailwindcss/vite
+
+# Using pnpm
+pnpm add @bouquet-ui/design jade-garden tailwindcss @tailwindcss/vite
+
+# Using bun
+bun add @bouquet-ui/design jade-garden tailwindcss @tailwindcss/vite
 ```
 
-## Usage
+### Usage
 
-1. Import our base stylesheet _after_ the tailwind import:
+To get started, have [Tailwind setup](https://tailwindcss.com/docs/installation) in your Vue or Nuxt environment.
+
+Import `@bouquet-ui/design` to the CSS file that imports Tailwind CSS:
 
 ```css
-@import 'tailwindcss';
-@import '@skeletonlabs/skeleton'; /* Add Skeleton Stylesheet */
+@import "tailwindcss";
+
+@source "../node_modules/@bouquet-ui/design";
+
+@import "@bouquet-ui/design/styles";
 ```
 
-2. Import a prebuild or custom theme _after_ the base skeleton import:
+## Advanced
 
-```css
-@import 'tailwindcss';
-@import '@skeletonlabs/skeleton';
-@import '@skeletonlabs/skeleton/themes/cerberus'; /* Add Skeleton Theme */
+If you are struggling to override the class names from `@bouquet-ui/design`, you can export the Jade Garden configurations with `@jade-garden/cli`:
+
+```bash
+# Using npx
+npx @jade-garden/cli
+
+# Using pnpx
+pnpx @jade-garden/cli
+
+# Using bunx
+bunx @jade-garden/cli
 ```
 
-3. Set your imported theme in your HTML root:
+Just import the styles you would like to write over, and make it yours:
 
-```html
-<html data-theme="cerberus">
-	<!-- Add Skeleton Theme -->
-	<!-- ... -->
-</html>
+```ts
+// jade-garden.config.ts
+import { styles, metaConfig } from "@bouquet-ui/design";
+import type { Config } from "@jade-garden/cli";
+
+export default {
+  components: styles,
+  metaConfig
+  outDir: "./design"
+} satisfies Config;
 ```
-
-4. Enjoy Skeleton! Visit [the documentation](https://skeleton.dev/) for any questions.
-
-## Project Setup
-
-This project uses [Vite](https://vite.dev/) as the build tool. To author our CSS stylesheets in an efficient way we utilize [Sass](https://sass-lang.com/) for handling things like loops and shared variables. This is merely a build tool so we will never author actual Sass, we're a Tailwind library after all.
-
-## Project Structure
-
-```
-src/
-├── base/       # Core styles, color definitions, and base configurations
-├── components/ # Component-specific classes
-├── internal/   # Internal utilities, constants, and shared resources
-├── themes/     # All official Skeleton themes
-├── utilities/  # Tailwind utilities
-└── variants/   # Tailwind variants
-```
-
-## License
-
-This project is licensed under the MIT license.
