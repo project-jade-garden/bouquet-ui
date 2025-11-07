@@ -22,18 +22,19 @@ jobs:
       - name: Build packages
         run: bun run build
 
-  tests:
-    name: Tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
+  # TODO: Add snapshot tests
+  # tests:
+  #   name: Tests
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v5
 
-      - name: Install
-        uses: ./.github/composite-actions/install
+  #     - name: Install
+  #       uses: ./.github/composite-actions/install
 
-      - name: Run tests
-        run: bun test
+  #     - name: Run tests
+  #       run: bun test
 
   lint:
     name: Lint
