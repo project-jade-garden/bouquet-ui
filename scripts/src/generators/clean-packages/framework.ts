@@ -34,7 +34,7 @@ const SVELTE_ROOT_EXPORT = {
   } as Record<string, Record<string, string>>
 };
 
-const SKIP_FILES = ["index.ts", "utils.ts"];
+const SKIP_FILES = [".DS_Store", "index.ts", "utils.ts"];
 
 const getDir = (dir: string): string[] => readdirSync(join(process.cwd(), `../${dir}`));
 

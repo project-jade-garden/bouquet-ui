@@ -383,16 +383,6 @@
         "default": "./dist/classes/components/switch/index.cjs"
       }
     },
-    "./components/table": {
-      "import": {
-        "types": "./dist/classes/components/table/index.d.ts",
-        "default": "./dist/classes/components/table/index.js"
-      },
-      "require": {
-        "types": "./dist/classes/components/table/index.d.cts",
-        "default": "./dist/classes/components/table/index.cjs"
-      }
-    },
     "./components/tabs": {
       "import": {
         "types": "./dist/classes/components/tabs/index.d.ts",
@@ -581,6 +571,16 @@
       "require": {
         "types": "./dist/classes/elements/link/index.d.cts",
         "default": "./dist/classes/elements/link/index.cjs"
+      }
+    },
+    "./elements/table": {
+      "import": {
+        "types": "./dist/classes/elements/table/index.d.ts",
+        "default": "./dist/classes/elements/table/index.js"
+      },
+      "require": {
+        "types": "./dist/classes/elements/table/index.d.cts",
+        "default": "./dist/classes/elements/table/index.cjs"
       }
     },
     "./elements/textarea": {

@@ -40,7 +40,7 @@
         "vite-plugin-dts": "catalog:vite",
       },
       "peerDependencies": {
-        "jade-garden": ">=2.0.0",
+        "jade-garden": ">=2.0.5",
       },
     },
     "packages/react": {
