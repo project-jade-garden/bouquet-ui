@@ -1,6 +1,6 @@
 {
   "name": "@bouquet-ui/design",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The headless design system for Bouquet UI built with Jade Garden and Tailwind CSS",
   "keywords": [
     "bouquet-ui",
