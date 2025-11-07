@@ -27,7 +27,7 @@
     },
     "packages/design": {
       "name": "@bouquet-ui/design",
-      "version": "0.0.0",
+      "version": "0.0.1",
       "dependencies": {
         "jade-garden": "catalog:jg",
       },
@@ -45,7 +45,7 @@
     },
     "packages/react": {
       "name": "@bouquet-ui/react",
-      "version": "0.0.0",
+      "version": "0.0.1",
       "dependencies": {
         "@ark-ui/react": "catalog:ark",
       },
@@ -83,7 +83,7 @@
     },
     "packages/solid": {
       "name": "@bouquet-ui/solid",
-      "version": "0.0.0",
+      "version": "0.0.1",
       "dependencies": {
         "@ark-ui/solid": "catalog:ark",
       },
@@ -114,7 +114,7 @@
     },
     "packages/svelte": {
       "name": "@bouquet-ui/svelte",
-      "version": "0.0.0",
+      "version": "0.0.1",
       "dependencies": {
         "@ark-ui/svelte": "catalog:ark",
       },
@@ -148,7 +148,7 @@
     },
     "packages/vue": {
       "name": "@bouquet-ui/vue",
-      "version": "0.0.0",
+      "version": "0.0.1",
       "dependencies": {
         "@ark-ui/vue": "catalog:ark",
       },

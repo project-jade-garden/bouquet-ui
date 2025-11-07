@@ -1,6 +1,6 @@
 {
   "name": "@bouquet-ui/svelte",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A lovely arrangement of Svelte components built with Ark UI, Jade Garden, and Tailwind CSS",
   "keywords": [
     "bouquet-ui",
